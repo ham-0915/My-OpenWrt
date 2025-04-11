@@ -200,6 +200,7 @@ jobs:
               2025-0314：同步上游的更新。
               2025-0324：更新passwall2，nikki的配置文件。
               2025-0401：更新config文件，增加firewall4插件。
+              2025-0411：测试有无nikki插件。
 
     - name: 删除运行记录
       uses: Mattraks/delete-workflow-runs@main
