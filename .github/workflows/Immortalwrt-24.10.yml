@@ -95,10 +95,10 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P1_SH
 
     - name: 更新feeds
-      run: cd openwrt && ./scripts/feeds update -a
+      run: cd openwrt && ./scripts/feeds update -a -f
 
     - name: 安装feeds
-      run: cd openwrt && ./scripts/feeds install -a
+      run: cd openwrt && ./scripts/feeds install -a -f
 
     - name: 加载DIY_P2
       run: |
@@ -191,6 +191,7 @@ jobs:
               2025-0318：修复几处错误的翻译，添加nikki插件，同步上游的更新。
               2025-0323：同步上游的更新。添加adguardhome插件。尝试修复nikki无法代理的问题。
               2025-0324：更新passwall2，nikki的配置文件。
+              2025-0411：同步上游的更新。
 
     - name: 删除运行记录
       uses: Mattraks/delete-workflow-runs@main
